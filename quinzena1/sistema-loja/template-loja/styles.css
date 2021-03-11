@@ -1,0 +1,103 @@
+body{width:100%;}
+
+
+
+.menu-index{
+    text-align: center;
+    text-decoration: none;
+
+    
+    
+}
+
+.titulo{
+    font-family: fantasy;
+    font-size:30px ;
+    text-align: center;
+    color: black;
+    margin: 100px;
+   
+}
+
+.frase-1{
+    text-align: center;
+    font-family: fantasy;
+}
+
+
+
+.social-medias{
+    text-align: center;
+    margin: 60px;
+ }
+
+
+.informações{
+    color: black;
+    text-align: center;
+    font-family: fantasy;
+    padding: 30px;
+}
+
+
+a{
+   text-decoration:none;
+   font-family: fantasy;
+   color: black;
+  
+}
+
+a:hover{
+    color:yellow;
+}
+ 
+#table{
+    font-family: fantasy;
+    font-size: 15px;
+    margin: 200px;
+   
+}
+
+.add-produto{
+    font-family: fantasy;
+    text-align: center;
+  
+}
+
+button{
+    border-radius: 10px;
+    border-color: black;
+   font-family: fantasy;
+  background-color:yellow;
+    
+}
+
+button:hover{
+   color:yellow;
+}
+
+.funcionarios{
+    text-align: center;
+    padding: 0px;
+}
+
+.elon{
+    font-family: fantasy;
+}
+
+.herbert{
+    font-family: fantasy;
+}
+
+.edward{
+    font-family: fantasy;
+}
+
+.lucas{
+    font-family: fantasy;
+}
+
+.img-default{
+    margin: 200px;
+    text-align: center;
+}
