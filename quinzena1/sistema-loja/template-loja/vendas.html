@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Adicionar Produto</title>
+    <title>Document</title>
 </head>
 
 <body>
-
+    <!--menu de navegação-->
     <input class="input-1" type="checkbox" id="check">
     <label for="check">
-        <img class="img-menu" src="https://static.thenounproject.com/png/311039-200.png">
-    </label>
+          <img class="img-menu" src="https://static.thenounproject.com/png/311039-200.png">
+      </label>
     <nav class="menu-index">
         <ul class="menu-1">
             <li> <a class="links-menu" href="index.html">Página Inicial</a></li>
@@ -26,35 +26,40 @@
         </ul>
     </nav>
 
-    <h2 class="titulo">Adicionar Produto</h2>
-    <form id="formulario" action="#">
-        <div class="add-produto">
+    <h2 class="titulo">Vendas</h2>
+
+    <form id="formulario" action="#" method="GET">
+        <div class="venda">
             <div>
-                <label for="link-foto">Link para foto: </label>
-                <p><input type="url" id="link-foto" name="link-foto"></p>
+                <label for="Vendedor">Vendedor: </label>
+                <p>
+                    <input type="search" id="Vendedor " name="Vendedor "></p>
 
-                <label for="descricao">Descrição do produto: </label>
+                <label for="Comprador "> Comprador:</label>
                 <!-- Adicione o id apropriado para o input abaixo -->
-                <p><input type="text" id="descricao" name="descrição"></p>
+                <p><input type="search" id="descricao " name="descrição "></p>
 
-                <label for="preco">Preço (em R$): </label>
+                <label for="Contato "> Contato: </label>
                 <!-- Adicione o id apropriado e o type para receber números abaixo -->
-                <p><input type="number" id="preco" name="preço"></p>
+                <p><input type="tel " id="preco " name="preço "></p>
 
                 <!-- Preencha as propriedades necessárias para os elementos abaixo -->
-                <label for="Quantidade">Quantidade disponível:</label>
-                <p> <input type="number" id="quantidade" name="quantidade"></p>
+                <label for="E-mail ">E-mail:</label>
+                <p> <input type="email" id="email " name="email "></p>
             </div>
 
-            <div class="form-add">
+            <div class="venda-button ">
                 <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
-                <button class="button-produto" type="submit">Adicionar</button>
+                <button class="button-venda " type="submit ">Concluir</button>
+                <button class="button-venda " type="submit ">Crédito</button> <button class="button-venda " type="submit ">Débito</button>
 
             </div>
+
+
+
         </div>
 
     </form>
-
 
 </body>
 
