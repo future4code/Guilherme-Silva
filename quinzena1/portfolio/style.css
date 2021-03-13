@@ -1,0 +1,55 @@
+.play {
+    padding: 10px;
+    margin: 260px;
+    width: 150px;
+    height: 35px;
+    background-color: black;
+    color: yellowgreen;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+.play:hover {
+    color: lawngreen;
+}
+
+.selectors {
+    border: black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 230px;
+    width: 150px;
+    height: 35px;
+    color: black;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke: px;
+    background-color: lawngreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.selectors:hover {
+    color: lawngreen;
+}
+
+.back {
+    text-decoration: none;
+    color: lawngreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.back:hover {
+    color: black;
+}
+
+.Linkedin-Image {
+    text-align: center;
+    margin: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+.Github-Image {
+    text-align: center;
+    margin: 200px;
+    width: 200px;
+}
