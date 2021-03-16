@@ -108,7 +108,9 @@
                             }
                             
                             table {
-                                width: 60%;
+                                width: 100%;
+                                padding: 100px;
+                                text-align: center;
                             }
                             
                             td button {
@@ -150,11 +152,6 @@
                             
                             #back-button:hover {
                                 background-color: #635a3d;
-                            }
-                            
-                            table {
-                                display: inline;
-                                text-align: center;
                             }
                             
                             .img-table {
