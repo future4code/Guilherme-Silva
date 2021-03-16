@@ -136,3 +136,8 @@
                     display: inline;
                     text-align: center;
                 }
+                
+                .img-table {
+                    width: 50px;
+                    background-color: white;
+                }
