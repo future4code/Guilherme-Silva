@@ -1,103 +1,173 @@
-body{width:100%;}
-
-
-
-.menu-index{
-    text-align: center;
-    text-decoration: none;
-
-    
-    
+@media only screen and (max-device-width: 900px) {
+    /* .menu { width:100%; } */
 }
 
-.titulo{
+.img-menu {
+    width: 40px;
+    border-radius: 30px;
+}
+
+.input-1[type="checkbox"] {
+    display: none;
+}
+
+.button-buy {
+    margin: 15px;
+    padding: 4px;
+    position: absolute;
+    left: 590px;
+    border-radius: 20px;
+    border-color: black;
+    background-color: yellow;
     font-family: fantasy;
-    font-size:30px ;
+    width: 50px;
+}
+
+.menu-index {
+    width: 250px;
+    height: 100px;
+    left: -250px;
+    position: absolute;
+}
+
+.input-1[type="checkbox"]:checked~.menu-index {
+    transform: translateX(250px);
+}
+
+.menu-1 {
+    list-style: none;
+    position: absolute;
+}
+
+.links-menu {
+    display: block;
+    padding: 20px 5px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.titulo {
+    font-family: fantasy;
+    font-size: 50px;
     text-align: center;
-    color: black;
+    color: yellow;
     margin: 100px;
-   
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000;
 }
 
-.frase-1{
+.frase-1 {
     text-align: center;
     font-family: fantasy;
 }
 
-
-
-.social-medias{
+.social-medias {
     text-align: center;
     margin: 60px;
- }
+}
 
+.informações {
+    color: yellow;
+    text-align: center;
+    font-family: fantasy;
+    padding: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
 
-.informações{
+a {
+    text-decoration: none;
+    font-family: fantasy;
     color: black;
-    text-align: center;
+}
+
+a:hover {
+    color: yellow;
+}
+
+#table {
     font-family: fantasy;
-    padding: 30px;
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    position: absolute;
+    left: 360px;
 }
 
-
-a{
-   text-decoration:none;
-   font-family: fantasy;
-   color: black;
-  
-}
-
-a:hover{
-    color:yellow;
-}
- 
-#table{
-    font-family: fantasy;
-    font-size: 15px;
-    margin: 200px;
-   
-}
-
-.add-produto{
+.add-produto {
     font-family: fantasy;
     text-align: center;
-  
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
-button{
-    border-radius: 10px;
-    border-color: black;
-   font-family: fantasy;
-  background-color:yellow;
-    
+.button-produto {
+    border-radius: 20px;
+    margin: 20px;
+    padding: 5px;
+    color: yellow;
 }
 
-button:hover{
-   color:yellow;
+.button-produto:hover {
+    color: white;
 }
 
-.funcionarios{
+.funcionarios {
     text-align: center;
     padding: 0px;
 }
 
-.elon{
+.elon {
     font-family: fantasy;
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
-.herbert{
+.herbert {
     font-family: fantasy;
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
-.edward{
+.edward {
     font-family: fantasy;
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
-.lucas{
+.lucas {
     font-family: fantasy;
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
-.img-default{
+.img-default {
     margin: 200px;
     text-align: center;
+}
+
+.venda {
+    padding: 80px;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 15px;
+}
+
+.button-venda {
+    margin: 20px;
+    color: yellow;
+    border-radius: 20px;
 }
