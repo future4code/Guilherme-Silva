@@ -1,0 +1,18 @@
+
+BUGFIXES LIST
+
+1- Consertei o botão Voltar da tela home,dando um destino com a tag a.
+2- Centralizei botão Comprar, estilanzando com text-align e padding.
+3- Formatei a seção azul, com um id, estilizando com padding e no container da ol usei list-style:none.
+4- Formatei a mensagem da seção azul com<br> no HTML.
+5- Formatei o texto da tabela, estilizando a tag table com text-align:center e display;inline.
+6- Atribuí uma class nas imagens da tabela, estilizei com widht e background-color.
+7- Estilizei a class icone com widht:auto e background-color:white.
+8- Usei active e hover para efeitos de clique e sopreposição nos botões Comprar.
+9- Com a propriedade border, estilizei as bordas do campo de texto.
+10- Mudei a fonte do botão Comprar com font-family.
+11- Centralizei a tabela, alterando seu widht e atribuí um padding.
+12- Enumerei retirando list-style:none da ol.
+13- Feito
+14- Com a propriedade hover, inseri efeito no ícone de busca.
+15- Alterei todos os botões com curso:pointer.
