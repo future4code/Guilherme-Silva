@@ -1,0 +1,74 @@
+
+.green-background {
+    background-color: green;
+    width: 300px;
+    text-align: center;
+    height: 30px;
+    
+}
+
+.yellow-background {
+    background-color: yellow;
+    width: 1000px;
+    height: 30px;
+    align-items: end;
+    
+
+}
+
+.pink-background {
+    background-color: fuchsia;
+    height: 450px;
+}
+
+.blue-background {
+    background-color: blue;
+    height: 200px;
+    width: 650px;
+    text-align:center;
+}
+
+.red-background {
+    background-color: red;
+    width: 400px;
+    height: 100px;
+    
+}
+
+.lightgreen-background {
+    background-color: lightgreen;
+    width: 400px;
+    height: 100px;
+    
+}
+
+.purple-background {
+    background-color: purple;
+    height: 30px;
+}
+
+
+#top-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	
+	
+    
+    
+}
+
+#middle-container{
+    display: grid;
+  
+    
+    
+}
+
+#vertical-middle-container{
+    display: grid;
+    grid-column-start: 3; 
+    grid-column-end: 4;
+    grid-row-end: 1; 
+    justify-items: end;
+   
+}
