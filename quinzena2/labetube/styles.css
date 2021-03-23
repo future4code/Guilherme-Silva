@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    background-color: tomato;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    
+}
+
+h2{
+    margin: 10px;
+    color: black;
+}
+
+a:link {
+    text-decoration:none;
+    }
+
+    h2:hover{
+        color: tomato;
+    }
+   
+
+ .search{
+     margin: 80px;
+     height: 20px;
+     width: 130px;
+     border: 2px solid #000;
+     border-radius: 10px;
+     cursor: pointer;
+     
+ }  
+
+ #blank{
+     background-color: white;
+     height: 160px;
+ }
+
+ footer{
+     background-color: black;
+     display: flex;
+     color: white;
+     height: 30px;
+     border: 2px solid tomato;
+     border-radius: 10px;
+     justify-content: center;
+     align-items: center;
+     
+ }
+
+ #container1{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin: 20px;
+     
+     
+ }
+ 
+
+ 
+ #container2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    
+      
+}
+
+.media1{
+    border-radius: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.media2{
+    border-radius: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+
+}
+
+.media3{
+    border-radius: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+
+}
+
+.media4{
+    border-radius: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+
+}
+
+.media5{
+    border-radius: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.media6{
+    border-radius: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.media7{
+    border-radius: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+
+}
+
+.media8{
+    border-radius: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+
+}
+
+h3{
+    margin: 50px;
+    text-align: center;
+   
+    
+}
+
+.video1{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.video2{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
