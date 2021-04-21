@@ -12,13 +12,30 @@ function inverteArray(array) {
 //Exercício 2
 
 function retornaNumerosParesElevadosADois (array) {
+   const numeros = [1, 2, 3, 4, 5, 6];
 
+   const numerosParesElevadosADois = [];
+
+   for(let index = 0; index < numeros.length; index++){
+      if(numeros[index] % 2 === 0){
+      
+         numerosParesElevadosADois.push(numeros[index]** 2)
+
+        
+      }else{
+
+      }
+      console.log(numerosParesElevadosADois)
+
+      
+   }
+   return numerosParesElevadosADois 
 }
 
 //Exercício 3
 
 function retornaNumerosPares (array) {
-   const numerosAleatorios = [1,5,8,12,13,54,64,77,61,89,100];
+   const numerosAleatorios = [1,2, 3, 4, 5, 6];
 
    const numerosPares = [];
 
@@ -38,11 +55,11 @@ function retornaNumerosPares (array) {
 //Exercício 4
 
 function retornaMaiorNumero(array) {
-  const numerosAleatorios2 = [23,65,77,12,34,65];
+  const numerosAleatorios2 = [10, 18, 7, 56, 39];
 
  const maiorNumero = Math.max(...numerosAleatorios2);
 
- console.log(maiorNumero)
+ console.log(maiorNumero);
 
  return maiorNumero
 }
@@ -50,7 +67,7 @@ function retornaMaiorNumero(array) {
 //Exercício 5
 
 function retornaQuantidadeElementos (array) {
-   // implemente sua lógica aqui
+  
 }
 
 //Exercício 6
