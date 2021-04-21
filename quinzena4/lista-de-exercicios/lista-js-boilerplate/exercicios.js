@@ -25,6 +25,8 @@ function retornaNumerosPares (array) {
    for(let index = 0; index < numerosAleatorios.length; index++){
       if(numerosAleatorios[index] % 2 === 0){
          numerosPares.push(numerosAleatorios[index])
+      } else{
+
       }
       
    }
@@ -36,7 +38,13 @@ function retornaNumerosPares (array) {
 //Exercício 4
 
 function retornaMaiorNumero(array) {
-   // implemente sua lógica aqui
+  const numerosAleatorios2 = [23,65,77,12,34,65];
+
+ const maiorNumero = Math.max(...numerosAleatorios2);
+
+ console.log(maiorNumero)
+
+ return maiorNumero
 }
 
 //Exercício 5
