@@ -67,9 +67,14 @@ function retornaMaiorNumero(array) {
 //Exercício 5
 
 function retornaQuantidadeElementos (array) {
-  
-}
+   const elementos = [1, 2, 3, 4, 5, 6];
 
+  console.log(elementos.length)
+
+  return elementos.length
+      
+   }
+ 
 //Exercício 6
 
 function retornaExpressoesBooleanas() {
