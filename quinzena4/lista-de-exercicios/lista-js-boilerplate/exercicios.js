@@ -5,18 +5,32 @@ function inverteArray(array) {
 
  invertendoArray.reverse();
  console.log(invertendoArray)
+
+ return invertendoArray
 } 
 
 //Exercício 2
 
 function retornaNumerosParesElevadosADois (array) {
-  
+
 }
 
 //Exercício 3
 
 function retornaNumerosPares (array) {
-   // implemente sua lógica aqui
+   const numerosAleatorios = [1,5,8,12,13,54,64,77,61,89,100];
+
+   const numerosPares = [];
+
+   for(let index = 0; index < numerosAleatorios.length; index++){
+      if(numerosAleatorios[index] % 2 === 0){
+         numerosPares.push(numerosAleatorios[index])
+      }
+      
+   }
+   console.log(numerosPares)
+
+   return numerosPares
 }
 
 //Exercício 4
