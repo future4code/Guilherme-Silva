@@ -72,9 +72,10 @@ function retornaQuantidadeElementos (array) {
   console.log(elementos.length)
 
   return elementos.length
+
+}
       
-   }
- 
+
 //Exercício 6
 
 function retornaExpressoesBooleanas() {
@@ -84,13 +85,24 @@ function retornaExpressoesBooleanas() {
 //Exercício 7
 
 function retornaNNumerosPares(n) {
-   // implemente sua lógica aqui
+
 }
 
 // Exercício 8
 
 function checaTriangulo(a, b, c) {
-  // implemente sua lógica aqui
+   a = 2
+   b = 3
+   c = 4
+
+ if(a == b && b == c){
+    console.log("Equilátero")
+
+ } else if(a == b || a == c || c == b){
+   console.log("Isósceles")
+ } else{
+    console.log("Escaleno")
+ }
 }
 
 // Exercício 9
@@ -108,13 +120,30 @@ function segundoMaiorEMenor(array) {
 //Exercício 11
 
 function ordenaArray(array) {
-   // implemente sua lógica aqui
+  const arrayCrescente = [20, 13, -1, 2, 5, 49, -40, 10, 70, 5];
+
+  arrayCrescente.sort()
+
+  console.log(arrayCrescente)
+
+  return arrayCrescente
+
+
 }
 
 // Exercício 12
 
 function filmeFavorito() {
-   // implemente sua lógica aqui
+   
+   const astrodev = {
+      nome: 'O Diabo Veste Prada',
+      ano: 2006,
+      diretor: 'David Frankel',
+      atores: ['Meryl Streep','Anne Hathaway','Emily Blunt','Stanley Tucci']
+   }
+   console.log(astrodev)
+
+   return astrodev
 }
 
 // Exercício 13
