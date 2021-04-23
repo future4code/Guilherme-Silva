@@ -179,7 +179,16 @@ return informacoesRetangulo
 // Exercício 15
 
 function anonimizaPessoa(pessoa) {
-   // implemente sua lógica aqui
+  const astrodevAnonimo = {
+     nome: 'Astrodev',
+     idade: 25,
+     email: 'astrodev@future4.com.br',
+     endereco: 'Rua do Futuro, 4'
+  }
+
+  astrodevAnonimo.nome = 'ANÔNIMO';
+
+  return astrodevAnonimo
 }
 
 // Exercício 16
