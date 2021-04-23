@@ -149,13 +149,31 @@ function filmeFavorito() {
 // Exercício 13
 
 function imprimeChamada() {
-   // implemente sua lógica aqui
+   const astrodev = {
+      nome: 'O Diabo Veste Prada',
+      ano: 2006,
+      diretor: 'David Frankel',
+      atores: ['Meryl Streep','Anne Hathaway','Emily Blunt','Stanley Tucci']
+   }
+
+   return `Venha assitir ao filme ${astrodev.nome}, de ${astrodev.ano}, dirigido por ${astrodev.diretor} e estrelado por ${astrodev.atores[0]}, ${astrodev.atores[1]}, ${astrodev.atores[2]}, ${astrodev.atores[3]}.`
+   
+
 }
 
 // Exercício 14
 
 function criaRetangulo(lado1, lado2) {
-   // implemente sua lógica aqui
+ 
+const informacoesRetangulo = {
+   largura: lado1,
+   altura: lado2,
+   perimetro: (2* (lado1 + lado2)),
+   area: (lado1 * lado2)
+}
+console.log(informacoesRetangulo)
+
+return informacoesRetangulo
 }
 
 // Exercício 15
