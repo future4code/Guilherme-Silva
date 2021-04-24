@@ -156,7 +156,7 @@ function imprimeChamada() {
       atores: ['Meryl Streep','Anne Hathaway','Emily Blunt','Stanley Tucci']
    }
 
-   return `Venha assitir ao filme ${astrodev.nome}, de ${astrodev.ano}, dirigido por ${astrodev.diretor} e estrelado por ${astrodev.atores[0]}, ${astrodev.atores[1]}, ${astrodev.atores[2]}, ${astrodev.atores[3]}.`
+   return `Venha assistir ao filme ${astrodev.nome}, de ${astrodev.ano}, dirigido por ${astrodev.diretor} e estrelado por ${astrodev.atores[0]}, ${astrodev.atores[1]}, ${astrodev.atores[2]}, ${astrodev.atores[3]}.`
    
 
 }
@@ -197,13 +197,18 @@ const arrayDePessoas = [
   { nome: "Pedro", idade: 20 },
   { nome: "João", idade: 10 },
   { nome: "Paula", idade: 12 },
-  { nome: "Artur", idade: 89 } 
-]
+  { nome: "Artur", idade: 89 } ]
+
 
 // Exercício 16, letra A
 
 function maioresDe18(arrayDePessoas) {
-   // implemente sua lógica aqui
+   
+   const adultos = [];
+
+   if(arrayDePessoas.idade < 18){
+
+   }
 }
 
 // Exercício 16, letra B
