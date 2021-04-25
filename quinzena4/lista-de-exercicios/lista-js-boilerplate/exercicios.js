@@ -86,22 +86,32 @@ function retornaExpressoesBooleanas() {
 
 function retornaNNumerosPares(n) {
 
+   let numerosPares2 = [];
+
+
+
 }
 
 // Exercício 8
 
 function checaTriangulo(a, b, c) {
-   a = 2
-   b = 3
-   c = 4
+  
 
  if(a == b && b == c){
     console.log("Equilátero")
 
+    return 'Equilátero'
+
  } else if(a == b || a == c || c == b){
    console.log("Isósceles")
+
+   return 'Isósceles'
+
  } else{
     console.log("Escaleno")
+
+    return 'Escaleno'
+
  }
 }
 
