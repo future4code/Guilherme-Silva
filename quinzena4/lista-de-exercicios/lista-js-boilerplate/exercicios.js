@@ -235,7 +235,11 @@ function multiplicaArrayPor2(array) {
 // Exercício 17, letra B
 
 function multiplicaArrayPor2S(array) {
-  // implemente sua lógica aqui
+   const arrayMultiplicacao = array.map((numero) => {
+      return (numero * 2).toString()
+  }) 
+
+  return arrayMultiplicacao
 }
 
 // Exercício 17, letra C
