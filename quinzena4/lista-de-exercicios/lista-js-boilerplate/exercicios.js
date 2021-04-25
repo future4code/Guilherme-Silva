@@ -287,8 +287,19 @@ function retornaPessoasAutorizadas() {
 // Exercício 18, letra B
 
 function retornaPessoasNaoAutorizadas() {
-   // implemente sua lógica aqui
+  
+   let pessoasNaoAutorizadas = [];
+
+   for(const pessoa of pessoas){
+      if(pessoa.altura < 1.5 || pessoa.idade < 14 || pessoa.idade > 60){
+
+          pessoasNaoAutorizadas.push(pessoa)
+      }
+      
+   }
+   return pessoasNaoAutorizadas
 }
+
 
 //Exercício 19
 
