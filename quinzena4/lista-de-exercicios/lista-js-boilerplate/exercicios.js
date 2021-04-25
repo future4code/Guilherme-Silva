@@ -223,7 +223,13 @@ function menoresDe18(arrayDePessoas) {
 // Exercício 17, letra A
 
 function multiplicaArrayPor2(array) {
-   // implemente sua lógica aqui
+   const arrayMultiplicacao = array.map((numero) => {
+       return (numero * 2)
+   }) 
+
+   return arrayMultiplicacao
+
+
 }
 
 // Exercício 17, letra B
