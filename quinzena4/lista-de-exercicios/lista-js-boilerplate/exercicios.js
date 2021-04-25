@@ -245,7 +245,15 @@ function multiplicaArrayPor2S(array) {
 // Exercício 17, letra C
 
 function verificaParidade(array) {
-   // implemente sua lógica aqui
+   const arrayMultiplicacao = array.map((numero) => {
+      if( numero % 2 === 0){
+         return `${numero} é par`
+      } else {
+         return `${numero} é ímpar`
+      }
+  }) 
+
+  return arrayMultiplicacao
 }
 
 // Exercício 18
