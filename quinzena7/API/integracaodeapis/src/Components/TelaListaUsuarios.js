@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
-import TelaDetalhesUsuario from './TelaDetalhesUsuario';
+// import TelaDetalhesUsuario from './TelaDetalhesUsuario';
 
 //Estilização Usuários
 const UsuariosContainer = styled.div`
