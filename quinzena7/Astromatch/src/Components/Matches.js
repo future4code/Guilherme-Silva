@@ -138,6 +138,9 @@ axios.post( url, Body, {
     console.log(getProfile)
     getProfile()
 })
+.catch ( err => {
+    alert(err = "Ops! Parece que estamos com um problema técnico, por favor tente novamente mais tarde!!")
+})
     }
 
 
@@ -157,9 +160,9 @@ axios.post( url, Body, {
 
             <CardContainer>
 
-                <ProfilePhotos>
+                {/* <ProfilePhotos>
                     <img src={getProfile.photo} alt={'ProfilesImages'} />
-                </ProfilePhotos>
+                </ProfilePhotos> */}
 
                 <ButtonMatches>
 
