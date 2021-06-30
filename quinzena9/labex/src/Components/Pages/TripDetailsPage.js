@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 
 export default function TripDetailsPage() {
@@ -9,6 +9,11 @@ export default function TripDetailsPage() {
 
         history.push('/');
     }
+
+ useEffect(() => {
+
+     const protectedPage
+ })
 
     return (
 
