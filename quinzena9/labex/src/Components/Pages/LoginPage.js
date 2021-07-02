@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 
 
+
 export default function LoginPage() {
 
     const history = useHistory();
@@ -10,12 +11,12 @@ export default function LoginPage() {
     const [password, setPassword] = useState('');
 
 
-    const onChangeEmail = (e) => {
+    const handleEmail = (e) => {
 
         setEmail(e.target.value);
     };
 
-    const onChangePassword = (e) => {
+    const handlePassword = (e) => {
 
         setPassword(e.target.value);
     }
@@ -24,15 +25,18 @@ export default function LoginPage() {
 
     useEffect(() => {
 
-        const body = {
-            email: 'email',
-            password: 'password'
-        };
 
         const loginSubmit =
 
 
+
             async () => {
+
+                const body = {
+                    email: email,
+                    password: password
+                };
+
 
                 try {
 
@@ -40,13 +44,13 @@ export default function LoginPage() {
 
                         await axios
 
-                            .get(
-                                'https://us-central1-labenu-apis.cloudfunctions.net/labeX/darvas/trip/3bUbdB1gvPzWrThpazVC',
+                            .post(
+                                'https://us-central1-labenu-apis.cloudfunctions.net/labeX/darvas/login',
                                 body
                             )
 
-                    console.log("Deu certo: ", response.data.token);
-                    localStorage.setItem('token', response.data.token);
+                    console.log("ok ", response.token);
+                    localStorage.setItem('token', response.token);
                     history.push('/admin/trips/:id')
 
                 }
@@ -69,34 +73,30 @@ export default function LoginPage() {
         <>
             <h1>Login Page</h1>
 
-
-
-            <>
-
                 <input
                     placeholder='Email'
                     type='email'
                     value={email}
-                    onChange={onChangeEmail}>
+                    onChange={handleEmail}
 
-                </input>
+                />
 
                 <input
                     placeholder='Password'
                     type='password'
                     value={password}
-                    onChange={onChangePassword}>
+                    onChange={handlePassword}
 
-                </input>
+                />
 
                 <button
-                    >
+                    onClick={loginSubmit}
 
                     Enviar
-                </button>
+                />
 
             </>
 
-        </>
+        
     )
 }
