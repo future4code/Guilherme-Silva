@@ -8,19 +8,21 @@ export default function TripDetailsPage() {
     const useProtectedPage = () => {
 
         const history = useHistory();
+
+
+        useEffect(() => {
+
+            const token = localStorage.getItem('token');
+
+            if (token === null) {
+                history.push('/login')
+            }
+
+        }, []);
+
     }
 
-    useEffect(() => {
-
-        const token = localStorage.getItem('token');
-
-        if (token === null) {
-            history.push('/login')
-        }
-
-    }, []);
-
-    export const TripDetailsPage = () => {
+    const TripDetailsPage = () => {
         useProtectedPage()
 
         useEffect(() => {
@@ -34,10 +36,10 @@ export default function TripDetailsPage() {
                 }
                 )
                 .then((res) => {
-                    console.log(response.data)
+                    console.log(res.data)
                 })
                 .catch((err) => {
-                    alert(err)
+                    alert(err.res)
                 })
         })
     }
@@ -48,7 +50,7 @@ export default function TripDetailsPage() {
 
             <h1>Trip Details Page</h1>
 
-          
+
 
         </>
 
