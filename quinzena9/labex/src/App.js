@@ -2,7 +2,6 @@ import React from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import HomePage from './Components/Pages/HomePage';
 import ListTripsPage from './Components/Pages/ListTripsPage';
-import ApplicationFormPage from './Components/Pages/ApplicationFormPage';
 import AdminHomePage from './Components/Pages/AdminHomePage';
 import LoginPage from './Components/Pages/LoginPage';
 import CreateTripPage from './Components/Pages/CreateTripPage';
@@ -31,11 +30,6 @@ function App() {
 
         </Route>
 
-        <Route exact path='/trips/application'>
-
-          <ApplicationFormPage />
-
-        </Route>
 
         <Route exact path='/login'>
 
@@ -43,7 +37,7 @@ function App() {
 
         </Route>
 
-        <Route exact path='/admin/trips/list'>
+        <Route exact path='/admin'>
 
           <AdminHomePage />
 

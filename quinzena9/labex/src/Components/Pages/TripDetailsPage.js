@@ -1,54 +1,56 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import styled from "styled-components";
+
+
+const TripDetailsTitle = styled.h1`
+letter-spacing: 8px;
+color: #CD6600;
+text-align: center;
+`
+
+const ButtonBack = styled.button`
+width: 10vw;
+height: 6vh;
+color: #CD6600;
+cursor: pointer;
+background-color: #4F4F4F;
+border-color: #CD6600;
+border-radius: 10px;
+&:hover{
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      transform: scale(1.1);
+    
+}
+`
 
 export default function TripDetailsPage() {
 
+    const history = useHistory();
 
-    const useProtectedPage = () => {
+    const goToHome = () => {
 
-        const history = useHistory();
-
-
-        useEffect(() => {
-
-            const token = localStorage.getItem('token');
-
-            if (token === null) {
-                history.push('/login')
-            }
-
-        }, []);
+        history.push('/');
 
     }
 
-    const TripDetailsPage = () => {
-        useProtectedPage()
 
-        useEffect(() => {
-
-            const token = localStorage.getItem('token');
-            axios.
-                get('https://us-central1-labenu-apis.cloudfunctions.net/labeX/darvas/trip/3bUbdB1gvPzWrThpazVC', {
-                    headers: {
-                        auth: token
-                    }
-                }
-                )
-                .then((res) => {
-                    console.log(res.data)
-                })
-                .catch((err) => {
-                    alert(err.res)
-                })
-        })
-    }
 
     return (
 
         <>
 
-            <h1>Trip Details Page</h1>
+            <ButtonBack
+                onClick={goToHome}>
+
+                Voltar
+            </ButtonBack>
+
+            <TripDetailsTitle>
+                Trip Details Page
+            </TripDetailsTitle>
 
 
 

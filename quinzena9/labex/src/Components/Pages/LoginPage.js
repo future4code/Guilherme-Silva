@@ -1,6 +1,70 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
+import styled from "styled-components";
+
+const ButtonBack = styled.button`
+width: 10vw;
+height: 6vh;
+color: #CD6600;
+cursor: pointer;
+background-color: #4F4F4F;
+border-color: #CD6600;
+border-radius: 10px;
+&:hover{
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      transform: scale(1.1);
+    
+}
+`
+
+const LoginTitle = styled.h1`
+letter-spacing: 8px;
+color: #CD6600;
+text-align: center;
+`
+
+const ContainerLogin = styled.div`
+text-align: center;
+margin: 6vh;
+width: 40vw;
+margin-left: auto;
+margin-right: auto;
+padding: 10vw;
+border: 2px solid #CD6600;
+transition: 0.10s;
+border-radius: 40px;
+`
+
+const Input = styled.input`
+width: 30vw;
+height: 3vh;
+cursor: pointer;
+background-color: #4F4F4F;
+color: white;
+font-size: 20px;
+border-color: #CD6600;
+border-radius: 10px;
+`
+
+const ButtonSend = styled.button`
+color: #CD6600;
+margin: 4vh;
+width: 20vw;
+height: 10vh;
+cursor: pointer;
+background-color: #4F4F4F;
+border-color: #CD6600;
+  border-radius: 10px;
+&:hover{
+
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      transform: scale(1.2);
+    
+}
+`
 
 
 
@@ -21,10 +85,19 @@ export default function LoginPage() {
         setPassword(e.target.value);
     }
 
+    const goToHome = () => {
 
+        history.push('/')
 
+    }
 
-    const loginSubmit = () => {
+    //  useEffect(() => {
+    //         loginAdmin()
+    //     })
+
+    const loginAdmin = (e) => {
+
+        e.preventDefault();
 
         const body = {
             email: email,
@@ -39,7 +112,7 @@ export default function LoginPage() {
             .then((res) => {
                 console.log("ok ", res.token);
                 localStorage.setItem('token', res.token);
-                history.push('/admin/trips/:id')
+                history.push('/admin')
             })
             .catch((err) => {
                 alert(err)
@@ -52,32 +125,54 @@ export default function LoginPage() {
 
 
 
+
+
     return (
 
         <>
-            <h1>Login Page</h1>
 
-            <input
-                placeholder='Email'
-                type='email'
-                value={email}
-                onChange={handleEmail}
+            <ButtonBack
+                onClick={goToHome}>
 
-            />
+                Voltar
+            </ButtonBack>
 
-            <input
-                placeholder='Password'
-                type='password'
-                value={password}
-                onChange={handlePassword}
+            <LoginTitle>
+                Login
+            </LoginTitle>
 
-            />
+            <ContainerLogin>
 
-            <button
-                onClick={loginSubmit}>
-                Enviar
-            </button>
+                <form onSubmit={loginAdmin}>
 
+                    <Input
+                        placeholder='Email'
+                        type='email'
+                        value={email}
+                        onChange={handleEmail}
+                        required>
+
+                    </Input>
+
+                    <p />
+
+                    <Input
+                        placeholder='Password'
+                        type='password'
+                        value={password}
+                        onChange={handlePassword}
+                        required>
+
+                    </Input>
+                    <p />
+
+                    <ButtonSend>
+                        Enviar
+                    </ButtonSend>
+
+                </form>
+
+            </ContainerLogin>
 
         </>
 
